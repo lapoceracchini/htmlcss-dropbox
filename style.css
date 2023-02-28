@@ -4,24 +4,89 @@
   box-sizing: border-box;
 }
 
-header{
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*BODY*/
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+/*HEADER*/
+header .container-h{
+  background-color: white;
   height: 60px;
-  background-color: brown;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
+  padding: 15px 20px;
+  position: fixed;
+  min-width: 960px;
 }
 
-.dp-logo{
-  font-size: 10px;
-  margin-left: 20px;
+header .logo-d, header ul, header a{
+  vertical-align: sub;
 }
 
-span{
-  margin-right: 20px;
+ul{
+  list-style-type: none;
 }
 
-button{
-  margin-right: 20px;
+header ul a{
+  padding: 30px 0;
 }
+
+header .logo-d, header ul{
+  margin-top: 3px;
+}
+
+header .button{
+  position: relative;
+  top: 0;
+  float: right;
+  margin-left: 15px;
+}
+
+.logo-d{
+  float: left;
+  margin-right: 15px;
+  width: 100px;
+}
+
+.logo-d img{
+  width: 100%;
+}
+
+header nav{
+  display: inline-block;
+  width: calc(100% - 115px);
+}
+
+.nav-left{
+  float: left;
+}
+
+.nav-right{
+  float: right;
+}
+
+nav ul li{
+  display: inline;
+  margin: 0 15px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.button{
+  padding: 3px 12px;
+  display: inline-block;
+}
+
+.button.blue{
+  background-color: #0061ff;
+  color: white;
+}
+
+/*MAIN*/
